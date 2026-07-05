@@ -1,14 +1,14 @@
 {
-  "name": "egsx",
+  "name": "egsk",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host --port 3000 --base=/egsx/",
-    "build": "vite build --base=/egsx/",
+    "dev": "vite --host --port 3000 --base=/egsk/",
+    "build": "vite build --base=/egsk/",
     "preview": "vite preview --host --base=/egsx/",
-    "build:github": "vite build --base=/egsx/",
-      "deploy": "npm run build:github && npx gh-pages -d dist -b gh-pages -r https://github.com/skyDevet/egsx.git --force"
+    "build:github": "vite build --base=/egsk/",
+      "deploy": "npm run build:github && npx gh-pages -d dist -b gh-pages -r https://github.com/skyDevet/egsk.git --force"
   },
   "dependencies": {
     "preact": "^10.22.0"
