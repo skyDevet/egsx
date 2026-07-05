@@ -8,7 +8,7 @@
     "build": "vite build --base=/",
     "preview": "vite preview --host --base=/",
     "build:github": "vite build --base=/",
-    "deploy": "npm run build && npx gh-pages -d dist -b gh-pages -f"
+    "deploy": "npm run build && npx gh-pages -d dist -b gh-pages -f",
     "capacitor:add": "npx cap add android",
     "capacitor:sync": "npx cap sync",
     "capacitor:open": "npx cap open android"
