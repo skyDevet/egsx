@@ -8,7 +8,7 @@
     "build": "vite build --base=/egsx/",
     "preview": "vite preview --host --base=/egsx/",
     "build:github": "vite build --base=/egsx/",
-    "deploy": "npm run build:github && npx gh-pages -d dist -b gh-pages -r https://github.com/skyDevet/egsx.git",
+    "deploy": "npm run build:github && npx gh-pages -d dist -b gh-pages -r https://github.com/skyDevet/egsx.git --force",
   },
   "dependencies": {
     "preact": "^10.22.0"
