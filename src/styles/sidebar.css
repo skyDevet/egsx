@@ -1,0 +1,247 @@
+
+/* Make the sidebar a flex column container */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* or relative if inside a fixed container */
+    top: 0;
+    left: 0;
+    bottom:2em;
+    width: 280px; /* or your sidebar width */
+    background: #1a1a2e; /* or your sidebar color */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Push footer to bottom automatically */
+.sidebar-content {
+    flex: 1; /* Takes all available space */
+    overflow-y: auto; /* Scrollable content area */
+    padding: 16px;
+}
+.sidebar-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* or flex-start / center */
+    gap: 12px; /* space between items */
+    padding: 16px;
+    width: 100%;
+}
+
+/* Each container inside should also be flex */
+.sidebar-config-selector,
+.sidebar-language-selector,
+.sidebar-auth-section {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Make the language selector inline too */
+.sidebar-language-selector {
+    display: inline-flex;
+    align-items: center;
+}
+
+.language-selector-sidebar {
+    background: transparent;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+/* Auth section */
+.sidebar-auth-section {
+    display: inline-flex;
+    align-items: center;
+}
+  .sidebar {
+    width: 100%;
+    left: -100%;
+  }
+.sidebar-auth-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 6px 12px;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Sidebar Language Selector */
+.sidebar-language-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.sidebar-language-selector .material-symbols-rounded {
+  font-size: 20px;
+  color: #667eea;
+}
+
+.language-selector-sidebar {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.language-selector-sidebar option {
+  background: #1a1a2e;
+  color: #fff;
+}
+
+/* Sidebar Auth Section */
+.sidebar-auth-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-auth-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: rgba(102, 126, 234, 0.2);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-auth-btn:hover {
+  background: rgba(102, 126, 234, 0.3);
+}
+
+.sidebar-auth-btn .material-symbols-rounded {
+  font-size: 20px;
+  color: #667eea;
+}
+
+/* Adjust sidebar content to use flex column */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+}
+
+/* Make chat history scrollable */
+.chat-history-list {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 16px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -350px;
+  width: 350px;
+  height: 100vh;
+  background: var(--primary-color);
+  border-right: 1px solid var(--secondary-color);
+  z-index: 1001;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  color: var(--text-color);
+}
+.sidebar-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+
+.new-chat-btn:hover {
+  background: var(--secondary-hover-color);
+}
+
+.chat-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 90vh;
+}
+
+.chat-session-item {
+  padding: 12px;
+  background: var(--secondary-color);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.chat-session-item:hover {
+  background: var(--secondary-hover-color);
+}
+
+.session-preview {
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.session-date {
+  font-size: 0.8rem;
+  color: var(--placeholder-color);
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+.sidebar-overlay.active {
+  display: block;
+}
