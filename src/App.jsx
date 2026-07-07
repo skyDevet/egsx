@@ -273,7 +273,7 @@ const [showConfigManager, setShowConfigManager] = useState(false);
       <header class="header-bar">
         <div class="header-content">
           <button class="logo-btn" onClick={() => setSidebarOpen(!sidebarOpen)}>
-            <img src=".img/1752692028961-removebg-preview.png" alt="AGIG" class="logo" />
+            <img src="/.img/1752692028961-removebg-preview.png" alt="AGIG" class="logo" />
             <span style={{color:'gold'}} class="app-name">Mesobwork</span>
           </button>
           
