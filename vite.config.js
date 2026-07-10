@@ -3,7 +3,7 @@ import preact from '@preact/preset-vite'
 
 export default defineConfig(({ mode }) => {
   // Force GitHub Pages base
-  const baseUrl = '/egsx/'
+  const baseUrl = '/egsk/'
   
   return {
     base: baseUrl,

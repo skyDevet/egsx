@@ -3,7 +3,7 @@
   "appName": "egs",
   "webDir": "dist",
   "server": {
-    "url": "sky.net.et",
+    "url": "https://sky.net.et/egsk/",
     "cleartext": true
   },
   "plugins": {
