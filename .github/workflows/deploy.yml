@@ -34,7 +34,7 @@ jobs:
         run: npm ci
       
       - name: Build
-        run: npm run build -- --base=/egsx/
+        run: npm run build -- --base=/egsk/
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
