@@ -7,7 +7,14 @@
     "cleartext": true
   },
   "plugins": {
-    "extConfig": {},
+    "Filesystem": {
+      "androidPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ]
+    },
     "CapacitorUpdater": {
       "appId": "com.skynet.egs",
       "version": "0.0.0",
