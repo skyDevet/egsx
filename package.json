@@ -20,6 +20,7 @@
     "compromise": "^14.15.1",
     "highlight.js": "^11.11.1",
     "idb": "^8.0.3",
+    "llama-cpp-capacitor": "^0.2.2",
     "marked": "^18.0.5",
     "pdfjs-dist": "^5.7.284",
     "preact": "^10.22.0",
