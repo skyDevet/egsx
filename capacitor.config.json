@@ -28,10 +28,10 @@
     }
   },
   "pwa": {
-    "name": "FDRE Advanced Services",
+    "name": "egs",
     "short_name": "FDRE-AGS",
     "description": "A blazing fast services",
-    "start_url": "/",
+    "start_url": "/egsx/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#646cff",
