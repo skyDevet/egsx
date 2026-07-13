@@ -3,7 +3,7 @@ node_modules/
 .cache/
 
 # Build outputs - THESE WILL NOT BE PUSHED
-
+src/
 .vite/
 build/
 .capacitor/
