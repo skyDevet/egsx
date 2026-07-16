@@ -26,10 +26,11 @@ export default defineConfig(({ mode }) => {
       }
     },
     // ✅ CRITICAL FIX: Configure worker format
-    worker: {
-      format: 'es',  // Use ESM format for workers (not IIFE)
-      plugins: [preact()]
-    },
+    // ✅ Fixed version
+worker: {
+  format: 'es',
+  plugins: () => [preact()]  // Function that returns array
+},
     // Optimize dependencies for Capacitor
     optimizeDeps: {
       include: [

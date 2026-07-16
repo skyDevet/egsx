@@ -8,7 +8,10 @@
     "build": "vite build --base=/egsx/",
     "preview": "vite preview --host --base=/egsx/",
     "build:github": "vite build --base=/egsx/",
-    "deploy": "npm run build:github && npx gh-pages -d dist -b gh-pages -r https://github.com/skyDevet/egsx.git --force"
+    "deploy": "npm run build:github && npx gh-pages -d dist -b gh-pages -r https://github.com/skyDevet/egsx.git --force",
+    "push":"npm run build && ./p2g.sh",
+    
+    "user":"npm run build && ./p2gu.sh"
   },
   "dependencies": {
     "@capacitor-community/sqlite": "^8.1.0",
